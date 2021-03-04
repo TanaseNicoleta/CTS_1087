@@ -56,7 +56,7 @@ public class CalendarUtil {
     }
 
     public String weekDay4(int day) throws IncorrectDayException {
-        String[] days = new DateFormatSymbols().getInstance(Locale.CHINESE).getWeekdays();
+        String[] days = DateFormatSymbols.getInstance(Locale.KOREA).getWeekdays();
         if(day<=7 && day >=0)
             return weekDays[day-1];
         else
