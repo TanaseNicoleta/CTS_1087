@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6a0a972-b4c1-42a2-b686-3fed90af1e6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar2/IncorrectDayException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Seminar2/ro/ase/csie/cts/seminar2/CalendarUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar2/ro/ase/csie/cts/seminar2/CalendarUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Seminar2/ro/ase/csie/cts/seminar2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar2/ro/ase/csie/cts/seminar2/Main.class" afterDir="false" />
