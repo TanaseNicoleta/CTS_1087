@@ -30,7 +30,11 @@ public class Main {
         Persoana p = new Persoana("Ionescu");
         BankAccount account = new BankAccount("INGB1234567899", p);
 
-        
+        account.deposit(100);
+        account.withdraw(50);
+        account.withdraw(70);
+
+        System.out.print(account.getBalance());
 
     }
 }
