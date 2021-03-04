@@ -2,6 +2,8 @@ package ro.ase.csie.cts.seminar2;
 
 public class CalendarUtil {
 
+    private String[] weekDays = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+
     public String weekDay(int day) {
         if (day == 1)
             return "Sunday";
@@ -19,5 +21,32 @@ public class CalendarUtil {
             return "Saturday";
 
         return null;
+    }
+
+    public String weekDay2(int day) {
+        switch(day){
+            case 1:
+                return "Sunday";
+            case 2:
+                return "Monday";
+            case 3:
+                return "Tuesday";
+            case 4:
+                return "Wednesday";
+            case 5:
+                return "Thursday";
+            case 6:
+                return "Friday";
+            case 7:
+                return "Sunday";
+            default:
+                return "Saturday";
+        }
+    }
+
+    public String weekDay3(int day) {
+        if(day<=7 && day >=0)
+            return weekDays[day-1];
+        else return null;
     }
 }
