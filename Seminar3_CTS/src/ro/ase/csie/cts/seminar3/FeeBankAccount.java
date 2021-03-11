@@ -9,7 +9,7 @@ public class FeeBankAccount extends DebitBankAccount {
 
     @Override
     public void withdraw(long amount) throws InsufficientFundsException {
-        System.out.println("Adding " + " dollars fee to withdrawal");
+        System.out.println("Adding 2 " + " dollars fee to withdrawal");
         amount+=2;
         super.withdraw(amount);
     }
