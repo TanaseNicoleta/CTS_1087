@@ -1,7 +1,5 @@
 package ro.ase.csie.cts.seminar3;
 
-public interface Account {
+public interface Payable {
     void withdraw(long amount) throws InsufficientFundsException;
-
-    void deposit(long amount);
 }
