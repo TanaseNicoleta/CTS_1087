@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a68225d6-52bc-407e-b4a8-e7bc88d7b7b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/Elvis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/ElvisV2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Seminar4_CTS/ro/ase/csie/cts/seminar4/Elvis.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar4_CTS/ro/ase/csie/cts/seminar4/Elvis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Seminar4_CTS/ro/ase/csie/cts/seminar4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar4_CTS/ro/ase/csie/cts/seminar4/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/Elvis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/Elvis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
