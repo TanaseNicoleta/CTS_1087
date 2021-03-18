@@ -1,47 +1,65 @@
 package ro.ase.csie.cts.seminar3;
 
-
 import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
-    public static void main(String[] args) {
 
-        Map<Persoana, Receivable> employees = new HashMap<>();
-        Persoana p1 = new Persoana("Chuck Norris");
-        CreditBankAccount b1 = new CreditBankAccount("RFZ123123123123", p1);
+	public static void main(String[] args) {
+		
+		
+		
+		NotificationService smsService = new SMSNotificationService();
+		NotificationService emailService = new EmailNotificationService();
+		
+		Map<Person, Receivable> employees = new HashMap<>();
 
-        Persoana p2 = new Persoana("Arnold");
-        DebitBankAccount b2 = new FeeBankAccount("INGB123123123123", p2);
+		Person p1 = new Person("Chuck Norris");
+		p1.setEmail("chuck@norris.com");
+		p1.setMobile("+4234230423");
+		CreditBankAccount b1 = new CreditBankAccount(smsService, "RFZ123123123", p1, -500);
+		
+		Person p2 = new Person("Arnold");
+		p2.setEmail("arnold@arnold.com");
+		p2.setMobile("+3453454230423");
+		DebitBankAccount b2 = new FeeBankAccount(emailService, "INGB12432423", p2);
+		
+		Person p3 = new Person("Van Damme");
+		p3.setEmail("van@damme.com");
+		p3.setMobile("+44534634423");
+		DebitBankAccount b3 = new DebitBankAccount(emailService, "BT12312323", p3);
+		
+		
+		employees.put(p1, b1);
+		employees.put(p2, b2);
+		employees.put(p3, b3);
+		
+		for(Receivable a : employees.values()) {
+			a.deposit(1000);
+		}
+		
+		Map<Person, Payable> union = new HashMap<>();
+		
+		union.put(p2, b2);
+		union.put(p3, b3);
+		
+		for(Payable a : union.values()) {
+			try {
+				a.withdraw(10);
+			} catch (InsuficientFundsException ex) {
+				System.out.println(ex.getMessage());
+			}
+		}
+		
+		
+		System.out.println("\n\n");
+		
+		try {
+			b2.transfer(b3, 200);
+		} catch (InsuficientFundsException e) {
+			System.out.println(e.getMessage());
+		}
+		
+	}
 
-        Persoana p3 = new Persoana("Van Damme");
-        DebitBankAccount b3 = new DebitBankAccount("BT123123123123", p3);
-
-        employees.put(p1, b1);
-        employees.put(p2, b2);
-        employees.put(p3, b3);
-
-        for(Receivable a: employees.values()) {
-            a.deposit(1000);
-        }
-
-
-        Map<Persoana,  Payable> union = new HashMap<>();
-        union.put(p2, b2);
-        union.put(p3, b3);
-        for(Payable a: union.values()) {
-            try {
-                a.withdraw(10);
-            } catch (InsufficientFundsException e) {
-                System.out.println(e.getMessage());
-            }
-        }
-
-        System.out.println("\n\n");
-        try {
-            b2.transfer(b3, 200);
-        } catch (InsufficientFundsException e) {
-            e.printStackTrace();
-        }
-    }
 }

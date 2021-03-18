@@ -1,34 +1,47 @@
 package ro.ase.csie.cts.seminar3;
 
-public class DebitBankAccount extends Account implements Payable, Receivable, Transferrable {
+public class DebitBankAccount extends BankAccount implements Payable, Receivable, Transferable {
 
-    public DebitBankAccount(String iban, Persoana pers) {
-        this.setIban(iban);
-        this.setAcountholder(pers);
-        this.setBalance(0);
-    }
 
-    @Override
-    public void withdraw(long amount) throws InsufficientFundsException{
-        if(amount > getBalance())
-            throw new InsufficientFundsException("Insufficient funds " + getBalance());
-        System.out.println("Withdrawing " + amount + " from " + getIban());
-        this.setBalance(this.getBalance() - amount);
-    }
+	public DebitBankAccount(NotificationService ns, String iban, Person person) {
+		super(ns);
+		this.iban = iban;
+		this.accountHolder = person;
+		balance = 0;
+	}
 
-    @Override
-    public void deposit(long amount) {
-        System.out.println("Depositing " + amount + " to " + getIban());
-        this.setBalance(this.getBalance() + amount);
-    }
+	@Override
+	public void withdraw(long amount) throws InsuficientFundsException {
+		if (amount > balance)
+			throw new InsuficientFundsException("Insuficient funds " + balance);
+		notificationService.sendNotification(accountHolder, "withdrawing " + amount + " from " + iban);
 
-    public Persoana getAccountHolder() {
-        return this.getAcountholder();
-    }
+		balance -= amount;
+	}
 
-    @Override
-    public void transfer(Receivable destination, long amount) throws InsufficientFundsException{
-        this.withdraw(amount);
-        destination.deposit(amount);
-    }
+	@Override
+	public void deposit(long amount) {
+		notificationService.sendNotification(accountHolder, "Adding " + amount + " to " + iban);
+		balance += amount;
+	}
+
+	public String getIban() {
+		return iban;
+	}
+
+	public long getBalance() {
+		return balance;
+	}
+
+	public Person getAccountHolder() {
+		return accountHolder;
+	}
+
+	@Override
+	public void transfer(Receivable destination, long amount) throws InsuficientFundsException {
+		this.withdraw(amount);
+		destination.deposit(amount);
+		
+	}
+
 }
