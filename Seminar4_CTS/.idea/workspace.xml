@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a68225d6-52bc-407e-b4a8-e7bc88d7b7b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/CTS_1087.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/banking/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/banking/CreditBankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/banking/DebitBankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/banking/EmailNotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/banking/FeeBankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/banking/InsuficientFundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/banking/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/banking/Payable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/banking/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/banking/Receivable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/banking/SMSNotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/banking/Transferable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/Elvis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/seminar4/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +27,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Seminar3_CTS" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

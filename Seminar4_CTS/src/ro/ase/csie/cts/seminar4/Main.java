@@ -20,9 +20,13 @@ public class Main {
         BigInteger bi2 = BigInteger.probablePrime(12, new Random());
 
         Boolean value = Boolean.valueOf(false);
-        
+
 
         b.deposit(50);
         System.out.println(b.toString());
+
+        Elvis newElvis = Elvis.theTrueElvis;
+        System.out.println('\n');
+        newElvis.sing();
     }
 }
