@@ -1,17 +1,38 @@
 package ro.as.csie.cts.seminar6.dp.builder;
 
 public class TestBuilder {
+
     public static void main(String[] args) {
-//        //Construiesti obiectul
-//        Supererou supererou = new Supererou();
-//        //Initializare atribute
-//        supererou.nume = "Superman";
-//
-//        Supererou supererou2 =
-//                new Supererou("Batman", 100, false, false, new Arma(), null, null, null);
 
-        Supererou superman = new Supererou.SupererouBuilder("Superman", 100).build();
+        //1 construiesti obiectul
+        //SuperErou superErou = new SuperErou();
+        //2. initializarea atributelor
+        //superErou.nume = "Superman";
 
-        System.out.println(superman.toString());
+        //SuperErou superErou2 =
+        //		new SuperErou("Batman", 100, false, false, new Arma(), null, null, null);
+
+
+        SuperErou superman =
+                new SuperErou.SuperErouBuilder("Superman", 100)
+                        .setArmaDreapta(new Arma())
+                        .setArmaStanga(new Arma())
+                        .build();
+
+        SuperErou joker =
+                new SuperErou.SuperErouBuilder("Joker", 200)
+                        .esteNegativ()
+                        .esteRanit()
+                        .setArmaDreapta(new Arma())
+                        .build();
+
+        SuperErou joker2 =
+                new SuperErou.SuperErouBuilder("Joker", 200)
+                        .esteNegativ()
+                        .esteRanit()
+                        .setArmaDreapta(new Arma())
+                        .build();
+
     }
+
 }

@@ -1,89 +1,84 @@
 package ro.as.csie.cts.seminar6.dp.builder;
 
-public class Supererou {
+class SuperErou {
 
-    String nume;
-    int puncteViata;
+    private String nume;
+    private int puncteViata;
 
-    boolean esteNegativ;
-    boolean esteRanitGrav;
+    private boolean esteNegativ;
+    private boolean esteRanitGrav;
 
-    //Deep
-    InterfataArma armaStanga;
-    InterfataArma armaDreapta;
-    InterfataSuperputere superputere;
-    InterfataSuperputere superSuperputere;
+    private InterfataArma armaStanga;
+    private InterfataArma armaDreapta;
+    private InterfataSuperputere superPutere;
+    private InterfataSuperputere superSuperPutere;
 
-    private Supererou() {
+    private SuperErou() {
+
     }
 
-    private Supererou(String nume, int puncteViata, boolean esteNegativ, boolean esteRanitGrav, InterfataArma armaStanga, InterfataArma armaDreapta, InterfataSuperputere superputere, InterfataSuperputere superSuperputere) {
+    private SuperErou(String nume, int puncteViata, boolean esteNegativ, boolean esteRanitGrav, InterfataArma armaStanga,
+                      InterfataArma armaDreapta, InterfataSuperputere superPutere, InterfataSuperputere superSuperPutere) {
+        super();
         this.nume = nume;
         this.puncteViata = puncteViata;
         this.esteNegativ = esteNegativ;
         this.esteRanitGrav = esteRanitGrav;
         this.armaStanga = armaStanga;
         this.armaDreapta = armaDreapta;
-        this.superputere = superputere;
-        this.superSuperputere = superSuperputere;
+        this.superPutere = superPutere;
+        this.superSuperPutere = superSuperPutere;
     }
 
-    public static class SupererouBuilder {
-        Supererou supererou;
 
-        public SupererouBuilder(String nume, int puncteViata) {
-            this.supererou = new Supererou();
+
+    public static class SuperErouBuilder {
+
+        SuperErou supererou;
+
+        public SuperErouBuilder(String nume, int puncteViata) {
+            this.supererou  = new SuperErou();
             this.supererou.nume = nume;
             this.supererou.puncteViata = puncteViata;
         }
 
-        public SupererouBuilder esteNegativ() {
+        public SuperErouBuilder esteNegativ() {
             this.supererou.esteNegativ = true;
             return this;
         }
 
-        public SupererouBuilder esteRanit() {
+        public SuperErouBuilder esteRanit() {
             this.supererou.esteRanitGrav = true;
             return this;
         }
 
-        public SupererouBuilder setArmaStanga(InterfataArma arma) {
+        public SuperErouBuilder setArmaStanga(InterfataArma arma) {
             this.supererou.armaStanga = arma;
             return this;
         }
 
-        public SupererouBuilder setArmaDreapte(InterfataArma arma) {
+        public SuperErouBuilder setArmaDreapta(InterfataArma arma) {
             this.supererou.armaDreapta = arma;
             return this;
         }
 
-        public SupererouBuilder setSuperputere(InterfataSuperputere superputere) {
-            this.supererou.superputere = superputere;
+        public SuperErouBuilder setSuperPutere(InterfataSuperputere superPutere) {
+            this.supererou.superPutere = superPutere;
             return this;
         }
 
-        public SupererouBuilder setSuperSuperputere(InterfataSuperputere superSuperputere) {
-            this.supererou.superSuperputere = superSuperputere;
+        public SuperErouBuilder setSuperSuperPutere(InterfataSuperputere superSuperPutere) {
+            this.supererou.superSuperPutere = superSuperPutere;
             return this;
         }
 
-        public Supererou build() {
+        public SuperErou build() {
             return this.supererou;
         }
 
+
     }
 
-    @Override
-    public String toString() {
-        return "Supererou{" +
-                "nume='" + nume + '\'' +
-                ", puncteViata=" + puncteViata +
-                ", esteNegativ=" + esteNegativ +
-                ", esteRanitGrav=" + esteRanitGrav +
-                ", armaStanga=" + armaStanga +
-                ", armaDreapta=" + armaDreapta +
-                ", superputere=" + superputere +
-                ", superSuperputere=" + superSuperputere +
-                '}';
-    }
+
+
 }
