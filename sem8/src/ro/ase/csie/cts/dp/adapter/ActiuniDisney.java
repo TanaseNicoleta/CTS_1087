@@ -5,4 +5,8 @@ public interface ActiuniDisney {
     public void primesteLovitura(int power);
     public void reincarca(int power);
     public void jump();
+
+    String getNume();
+
+    int getPower();
 }
