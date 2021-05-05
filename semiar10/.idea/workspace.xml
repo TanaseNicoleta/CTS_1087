@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="844a1bba-8672-4800-b62d-4350748e96cf" name="Default Changelist" comment="" />
+    <list default="true" id="844a1bba-8672-4800-b62d-4350748e96cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/chain/MesajChat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/chain/ModulChatGlobal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/chain/ModulChatPrivat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/chain/ModulFiltru.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/chain/NodChainAbstract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/chain/TestChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1s74LS4EdhnVoJiv7Lsc6fhokKS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -20,6 +44,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestChain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ro.ase.csie.cts.dp.chain.TestChain" />
+      <module name="semiar10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ro.ase.csie.cts.dp.chain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestChain" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -33,5 +77,16 @@
       <updated>1620210237077</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
