@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="844a1bba-8672-4800-b62d-4350748e96cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/chain/MesajChat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/chain/ModulChatGlobal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/chain/ModulChatPrivat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/chain/ModulFiltru.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/chain/NodChainAbstract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/chain/TestChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/command/InterfataModulJoc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/command/ModulAutoSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/command/ModulUpdateClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/command/TaskAsincron.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/command/TaskToDo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/csie/cts/dp/command/TestCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
