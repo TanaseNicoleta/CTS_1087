@@ -1,10 +1,11 @@
 package ro.ase.csi.cts.testare.modele;
 
-import java.util.ArrayList;
-
 import ro.ase.csi.cts.testare.exceptii.ExceptieNota;
 import ro.ase.csi.cts.testare.exceptii.ExceptieNume;
 import ro.ase.csi.cts.testare.exceptii.ExceptieVarsta;
+
+import java.util.ArrayList;
+
 
 public class Student {
 	public static final int MIN_VARSTA = 14;
@@ -77,7 +78,12 @@ public class Student {
 	}
 
     public int getNotaMinima() {
-        int min = 0;
+        //int min = 0;
+    	if(this.note==null || this.note.size()==0) {
+    		return 0;
+    	}
+    	
+    	int min=this.note.get(0);
         for(int nota : this.note) {
 			if(min > nota) {
                 min = nota;
